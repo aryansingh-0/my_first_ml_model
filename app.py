@@ -12,7 +12,7 @@ st.write("Enter an email or message below, and the model will predict whether it
 user_input = st.text_input("Your Message")
 
 # Predict
-if st.button("🔍 Predict"):
+if st.button("Predict"):
     prediction = model.predict([user_input])[0]  # Get scalar value from array
 
     if prediction == 1:
